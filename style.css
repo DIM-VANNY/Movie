@@ -127,6 +127,160 @@ a {
   margin: auto;
   /* background-color: aqua; */
 }
+
+.slide-section {
+  margin-top: 5rem;
+  /* width: 90%; */
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  /* background-color: red; */
+}
+.slide-section .txt {
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  color: var(--text-light);
+  font-weight: 500;
+  width: 100%;
+  height: 15%;
+  /* background-color: blue; */
+}
+.slide {
+  margin-top: 2rem;
+  gap: 3%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+  /* background-color: aqua; */
+}
+.slide-one {
+  display: flex;
+  width: 19.9%;
+  height: 100%;
+  /* background-color: rgb(174, 0, 255); */
+}
+.slide-one .text {
+  width: 20%;
+  height: 100%;
+  /* background-color: #ff3d00; */
+}
+.slide-one .text img {
+  width: 100%;
+  height: 100%;
+}
+.slide-one .img {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(81, 255, 0); */
+}
+.slide-one .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-two {
+  display: flex;
+  width: 19.9%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.slide-two .text {
+  width: 20%;
+  height: 100%;
+  /* background-color: #ff3d00; */
+}
+.slide-two .text img {
+  width: 100%;
+  height: 100%;
+}
+.slide-two .img {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(81, 255, 0); */
+}
+.slide-two .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-three {
+  display: flex;
+  width: 19.9%;
+  height: 100%;
+  /* background-color: brown; */
+}
+.slide-three .text {
+  width: 20%;
+  height: 100%;
+  /* background-color: #ff3d00; */
+}
+.slide-three .text img {
+  width: 100%;
+  height: 100%;
+}
+.slide-three .img {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(81, 255, 0); */
+}
+.slide-three .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-four {
+  width: 19.9%;
+  display: flex;
+  height: 100%;
+  /* background-color: rgb(255, 0, 140); */
+}
+.slide-four .text {
+  width: 20%;
+  height: 100%;
+  /* background-color: #ff3d00; */
+}
+.slide-four .text img {
+  width: 100%;
+  height: 100%;
+}
+.slide-four .img {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(81, 255, 0); */
+}
+.slide-four .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-five {
+  display: flex;
+  width: 19.9%;
+  height: 100%;
+  /* background-color: chartreuse; */
+}
+.slide-five .text {
+  width: 20%;
+  height: 100%;
+  /* background-color: #ff3d00; */
+}
+.slide-five .text img {
+  width: 100%;
+  height: 100%;
+}
+.slide-five .img {
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(81, 255, 0); */
+}
+.slide-five .img img {
+  width: 100%;
+  height: 100%;
+}
+
 .main-section {
   margin-top: 5rem;
 }
@@ -140,7 +294,7 @@ a {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 2fr;
-  gap: 3rem;
+  gap: 0.5%;
 }
 .cart {
   padding: 2.5rem;
@@ -155,6 +309,7 @@ a {
   width: 100%;
   height: 80%;
   /* background-color: blue; */
+  /* object-fit: fill; */
 }
 .img-cart img {
   width: 100%;
@@ -162,6 +317,7 @@ a {
   border-radius: 1rem;
 }
 .cart p {
+  color: var(--text-light);
   font-size: 2.5rem;
   margin-top: 1rem;
 }
@@ -170,12 +326,17 @@ a {
   gap: 1rem;
   font-size: 2rem;
   margin-top: 0.5rem;
+  color: var(--text-light);
 }
 .cart ul li {
   list-style-type: none;
 }
 .cart ul li:first-child {
   color: gold;
+}
+.cart ul li:nth-child(3),
+:nth-child(4) {
+  color: gray;
 }
 .cart:hover {
   background-color: purple;
@@ -243,13 +404,48 @@ a {
     font-size: 4rem;
   }
   .grid-section {
-    gap: 3rem;
+    gap: 3%;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 40rem 40rem 40rem 40rem;
+    grid-template-columns: auto auto auto;
   }
 }
 
 /* Laptop */
 @media only screen and (min-width: 1200px) {
+  .poster {
+    width: 30%;
+    height: 300px;
+  }
+  .poster img {
+    height: 100%;
+    width: 100%;
+  }
+  .txt-movie {
+    width: 35%;
+    /* background-color: antiquewhite; */
+    margin-top: 3.5rem;
+  }
+  .input-group {
+    margin-top: 3.5rem;
+    width: 60%;
+    height: 60px;
+  }
+  .input-group > span {
+    width: 10%;
+    /* background-color: var(--primary-color); */
+    height: 100%;
+  }
+  .main-section {
+    margin-top: 8rem;
+  }
+  .txt-popular {
+    font-size: 5rem;
+  }
+  .grid-section {
+    gap: 3%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+  }
 }
